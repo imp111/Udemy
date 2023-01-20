@@ -7,6 +7,6 @@ This repository contains all of my exercises and homeworks from all courses at U
 
 ### The Complete Networking Fundamentals Course. Your CCNA start :white_check_mark: 
 
-### Windows Server 2019 Administration :white_check_mark:  
+## Windows Server 2019 Administration :white_check_mark:  
 
-### DevOps Beginners to Advanced | Decoding DevOps with Projects :white_check_mark: 
+## DevOps Beginners to Advanced | Decoding DevOps with Projects :white_check_mark: 
