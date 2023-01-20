@@ -29,7 +29,7 @@ This repository contains all of my exercises and homeworks from all courses at U
 - Module 1 – Understanding Linux Concepts
 
 - Module 2 – Download, Install and Configure   
-What is Oracle Virtual Box?   
+-- What is Oracle Virtual Box?   
 Downloading and Installing Oracle Virtual Box
 Creating virtual machine   
 Linux Distributions   
