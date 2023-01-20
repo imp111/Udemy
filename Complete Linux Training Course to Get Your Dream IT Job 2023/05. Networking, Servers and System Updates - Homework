@@ -1,0 +1,19 @@
+Read all hand-outs
+
+Enable internet on your Linux VM
+
+Run network commands to familiarize yourself
+
+Run tcpdump -i your-linux-interface and view all the traffic coming in.  You can Ctrl C to exit out
+
+Update your linux system by running "yum update -y"
+
+Install DNS (bind) and go through the configuration file
+
+Configure your NTP to synchronize your system with pool.ntp.org
+
+Install Apache (httpd) and create your first web page
+
+Install and configure sendmail service
+
+Install and configure chronyd service.  (Stop NTP if running)
