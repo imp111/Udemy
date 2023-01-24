@@ -17,18 +17,19 @@ File System Structure:
 
 Commands:
 whoami - shows the current logged in user
-Navigating through the files system
+pwd - print working directory
+
+- Navigating through the files system
 cd - change directory
 	- ./ - current directory
 	- ../ - parent directory
 	- Relative Path - It identifies a location relative to you current position (/OperatingSystems/Lectures/)
 	- Absolute Path - Always begins with /. It is the path from the root directory to the current position (/home/userName/OperatingSystems/Lectures/)
-pwd - print working directory
 ls - list
 find - 
 locate -
 
-File Permisions
+- File Permisions
 d - directory
 - - regular file
 l - link
@@ -40,10 +41,21 @@ b - block device
 ls -l Structure:
 Type	# of Links	Owner	Group	Size	Month	Day	Time	Name	
 
-User Administration:
+- User Administration:
 passwd [userName] - change user password
+ACL (Access Control List) - gives an user or a group more flexible permissions to access, edit or execute directories and files.
+If some user is not part of the group of a directory, we can add him in the ACL and he will be able to access this directory.
+setfacl
+	setfacl -m u:user:rwx /path/to/file - add perfmissions for user
+	setfacl -m g:group:rw /path/to/file - add permissions for a group
+	setfacl -Rm "entry" /path/to/file - allow all files or directories to inherit ACL entries from the directory it is within
+	setfacl -x u:user /path/to/file - remove a specific entry (for specific user)
+	setfacl -b /path/to/file - remove all entries (for all users)
 
-Creating Files and Directories:
+getfacl /path/to/file - get all entries for the specific file
+
+
+- Creating Files and Directories:
 mkdir - make directory
 rmdir - remove empty directories
 rm - remove files and directories (you can also remove directories - recursivly)
