@@ -54,6 +54,12 @@ setfacl
 
 getfacl /path/to/file - get all entries for the specific file
 
+useradd - add user
+userdel - remove user
+	userdel -r userName - remove user, home directory and email spool
+usermod - modify user account
+groupadd
+groupdel
 
 - Creating Files and Directories:
 mkdir - make directory
