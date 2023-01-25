@@ -1,4 +1,4 @@
-# :white_check_mark: [Complete Linux Training Course to Get Your Dream IT Job 2023](https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/)
+# [Complete Linux Training Course to Get Your Dream IT Job 2023](https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/)
 - [Module 1 – Understanding Linux Concepts]()
   - What is Linux?   
   - Everyday use of Linux   
