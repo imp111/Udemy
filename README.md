@@ -20,6 +20,27 @@ This repository contains all of my exercises and homeworks from all courses at U
 - C Processes
 - C Pipes
 
+## [The Complete Networking Fundamentals Course. Your CCNA start](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/) :white_check_mark: 
+- Network basics
+- Network architectures (OSI Model)
+- What are hubs, switches, routers?
+- How is data forwarded through a network?
+- IP addresses
+- IP subnetting
+- Cabling and network topologies
+- Ethernet basics
+- TCP and UDP
+- DNS and DHCP
+- Routing
+- VLANs
+- Cisco device initial configurations
+- ACLs
+- Network naming
+- IP Telephony
+- Quality of Service (QoS)
+- SDN
+
+<!--
 ## [Fundamentals of Unix and Linux System Administration](https://www.udemy.com/course/fundamentals-of-unix-and-linux-system-administration/) :white_check_mark: 
 - Package management
 - Shell Scripting
@@ -43,28 +64,6 @@ This repository contains all of my exercises and homeworks from all courses at U
 - SSH
 - Web Hosting
 - Performance Analysis
-
-
-
-## [The Complete Networking Fundamentals Course. Your CCNA start](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/) :white_check_mark: 
-- Network basics
-- Network architectures (OSI Model)
-- What are hubs, switches, routers?
-- How is data forwarded through a network?
-- IP addresses
-- IP subnetting
-- Cabling and network topologies
-- Ethernet basics
-- TCP and UDP
-- DNS and DHCP
-- Routing
-- VLANs
-- Cisco device initial configurations
-- ACLs
-- Network naming
-- IP Telephony
-- Quality of Service (QoS)
-- SDN
 
 ## [Windows Server 2019 Administration](https://www.udemy.com/course/windows-server-2019-administration-h/) :white_check_mark:  
 - Deploying Windows Server Desktop Experience
@@ -175,3 +174,4 @@ This repository contains all of my exercises and homeworks from all courses at U
 - Module 9 - Terraform
   - Terraform for AWS Cloud automation
   - Cloudformation for AWS loud automation
+-->
