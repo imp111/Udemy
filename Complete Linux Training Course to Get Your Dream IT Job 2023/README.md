@@ -1,4 +1,4 @@
-# [Complete Linux Training Course to Get Your Dream IT Job 2023](https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/) :white_check_mark:
+# :white_check_mark: [Complete Linux Training Course to Get Your Dream IT Job 2023](https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/)
 - [Module 1 – Understanding Linux Concepts]()
   - What is Linux?   
   - Everyday use of Linux   
@@ -19,7 +19,7 @@
   - Who Uses Linux?   
   - Quiz, Homework and Handouts  
 
-- [Module 3 – System Access and File System](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/01.%20System%20Access%20and%20File%20System)   
+- Module 3 – System Access and File System: | [Lectures](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/01.%20System%20Access%20and%20File%20System) | [Homework](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Homeworks/01.%20System%20Access%20and%20File%20System) | 
   - Accessing Linux system
   - Download and install Putty   
   - Connect Linux VM via Putty   
