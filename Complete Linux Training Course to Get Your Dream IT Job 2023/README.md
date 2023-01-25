@@ -1,12 +1,12 @@
 # [Complete Linux Training Course to Get Your Dream IT Job 2023](https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/)
 
-- [Module 1 – Understanding Linux Concepts]()
+- Module 1 – Understanding Linux Concepts
   - What is Linux?   
   - Everyday use of Linux   
   - Unix vs. Linux   
   - Quiz, Homework and Handouts 
 
-- [Module 2 – Download, Install and Configure]()
+- Module 2 – Download, Install and Configure
   - What is Oracle Virtual Box?   
   - Downloading and Installing Oracle Virtual Box
   - Creating virtual machine   
@@ -78,7 +78,7 @@
   - SOS Report   
   - Quiz, Homework and Handouts 
 
-- [Module 6 – Shell Scripting](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/04.%20Shell%20Scripting) 
+- Module 6 – Shell Scripting: [Lecture](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/04.%20Shell%20Scripting) | [Homework](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Homeworks/04.%20Shell%20Scripting) | 
   - Linux Kernel   
   - What is a Shell?
   - Types of Shells 
@@ -92,7 +92,7 @@
   - Shell History 
   - Command history   
 
-- [Module 7 – Networking, Servers and System Updates](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/05.%20Networking%2C%20Services%20and%20System%20Updates)  
+- Module 7 – Networking, Servers and System Updates: | [Lecture](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/05.%20Networking%2C%20Services%20and%20System%20Updates) | [Homework](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Homeworks/05.%20Networking%2C%20Servers%20and%20System%20Updates) |  
   - Enabling internet in Linux VM  
   - Network Components  
   - Network files and commands (ping, ifconfig, netstat, tcpdump, networking config files)  
@@ -117,7 +117,7 @@
   - OpenLDAP Installation  
   - Quiz, Homework and Handouts 
 
-- [Module 8 – Disk Management and Run Levels](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/06.%20Disk%20Management%20and%20Run%20Levels)
+- Module 8 – Disk Management and Run Levels: | [Lecture](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/06.%20Disk%20Management%20and%20Run%20Levels) | [Homework](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Homeworks/06.%20Disk%20Management%20and%20Run%20Levels) |
   - System run levels
   - Linux Boot Process
   - Message of the Day
