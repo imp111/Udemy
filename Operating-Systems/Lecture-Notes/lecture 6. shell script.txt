@@ -1,0 +1,80 @@
+&& - logichesko i
+|| logichecko ili
+2 cmd se izpalnqva pri && samo ako exit status na 1 cmd e uspeshen, 0
+&> redirectva STDERR i STDOUT
+|| 2 cmd se izpalnqva, samo ako exit status na 1 cmd ne e 0
+test / []  command -f, cproverqva dali sledva6tiq argument e file, -d - checkva
+dali ne6to e direktoriq, -e checkva dali ne6to sa6testvuva, = za strings, -eq za
+ chisla
+if <cmd>; then
+body
+[else]
+<else body>
+[else if, elif]
+body
+fi
+
+default file perm = 666-umask
+default directory = 777-umask
+-------------------------------
+
+case $variable_name
+patern 1)
+command 1
+comand N
+;;
+patern 2....
+pattern 3....
+
+*) - default case
+exit 1
+
+esac
+
+
+
+----------------------------
+
+word splitting
+Kakvo e duma? nai malak smislov token na reda
+$IFS - dava koi znaci splittvat words
+------
+seq 1 10 dava ot 1 do 10. Moje da priema i stapki
+
+----------------------
+
+cycles
+
+for <variable> in <list.; do 
+<body>
+done
+
+<list> - a list of words
+
+for i in $(seq 1 1000); do <> done
+
+break and continue
+
+-------------
+while <command>]; do
+<body>
+done
+
+--------------
+() - subshell
+$()- Shell substiotution
+subshell pravi komandi ednovremenno
+whilw moje da priema subshell za komanda
+while raboti s kopiq na promenlivite
+Ako iskame cikala da ba4ka v teku6tiq shell <<(subshell)
+
+
+----
+Komandi: comm- sravnqva 2 files
+diff 
+patch?
+basename-chastta ot filename, koqto se namira sled slasha, vse edno relativen pat
+dirname - dava direktoriqta na sadarjaniq file, absolute path
+md5sum- smqta md5sum - vra6ta string s 32 simvola i e unikalen za vseki file, hash funkciq, kam sadarjanieto na file, ne kam inode
+
+

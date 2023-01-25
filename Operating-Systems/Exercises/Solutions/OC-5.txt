@@ -1,0 +1,62 @@
+niceness level na process - scheduler reshava kolko procesorno vreme da ima procesa
+higher niceness ne iskat resursi mnogo (nisak prioritet)
+procesorite si imat sobstven memory space
+security context na process - procesa se asociira s nqkolko UID i GID, real UID, real GID, effective UID, effective GID, toest potrebitelq i grupata startirali procesa
+environment - vseki proces si ima sobstvena environment, ima environmental promenlivi, za koito procesa znae
+file handles (file descriptor) - 4islo ot 0 do gorna granica (integer) na baza na nego i na PID kernel znae s koi file e asociiran procesa. 
+otkade idvat procesite? - 4rez fork (system call) sazdava pochti identichno kopie na procesa, izvikano ot system call
+kernela pravi parviq proces (pid 1) = init process 
+exec()(syscall)- podmenq instrukciite na procesa vmomenta 
+ps - process summary - summary na procesite vmomenta, cheti man stranicata
+pstree - godin interface na ps
+nice - startira nov proces s opredelen nice level - niceness> niceness na shella koito se runva
+renice - smenq niceness na process (rabot s PID)
+/proc - direktoriq v koqto ima mountnata virtualna FS - v neq ima direktorii koito vsa6tnost sa rabotnite procesi (man proc)
+top - vadi info za teku6ti procesi periodichno, spira s q
+ipc - innerprocess communication
+procesite mogat da si govorqt sas signali. Signalitesa chisla. Signalite si imat imena. Razlichnite signali imat razlichni stoinosti na razlichnite arhitekturi
+Vseki proces sam interpretira signalite. Primerno sig.hub instruktira procesa da si prochete sys. files
+man 7 signal
+kill <pid> prashtame signal na process, napr kill -9 <PID>
+killall <name> - signali na pove4e ot edin proces
+ctrl+C = sigint(2)
+Ctrl+z = sigstop(19)
+
+
+---------------- Command shells and shell scripting-----------------
+
+command shell - obvivka na kernela, user interface, udoben nachin da se raboti s file descriptors
+-Lesen nachin da puskame drugi programi, da kontroilirame izpalnenie na komandi, da pishem scriptove, dostap do FS
+
+koi e aktivniq shell /etc/passwd - posledna kolonka
+chsh - change shell 
+
+/etc/shells - info za vsichki shells
+sleep - man stranica
+& v kraq na komanda, oznachava, 4e komandata otiva v background
+s exit gasim bash
+V shellovete ima promenlivi, tezi promenlivi nqmat mnogo tipove, mai e samo 1, vsichki promenlivi sa stringove ili array. Promenlivite imat imena Ime na promenliva = stoinost
+Referirame promenliva s $(ime na promenliva)
+$USER - moeto ime
+$HOME $PWD $PATH
+export sazdava environmental promenliva (nasledqvat se ot fork). Shell promenlivite ne se nasledqvat ot fork
+Dete ne moje da promeni environmenta na bashtata
+env - pokazva vsi4ki environmental promenlivi
+set - pokazva vsi4ki shell promenlivi
+S {} zagrajdame imeto na promenlivite
+
+Script - executable text files, dobre e da imat razshirenie .sh
+
+Vseki script zapochva s #!
+sled #! pishem imeto na shella #!/bin/bash (parvi red)
+$1 - darji stoinostta na 1 command line argument
+$@ - promenliv koqto darji vsi4ko command line arguments
+$# broika command line arguments s koito e izvikan scripta
+shift mesti command line arguments s n mesta na dqsno, vse edno i+n
+read  - procheti v ss64 https://ss64.com/bash/read.html
+expr i test komandi
+exit statusi - 4islo ot 0 do 255, koeto komunikira, dali komandata uspe6no e svar6ila rabotata, koqto sme i zadali
+$? - darji exit statusa na polsednata komanda
+exit status 0 - uspeh
+exit status 1-255 - neuspeh (greshkata e v man stranicata)
+

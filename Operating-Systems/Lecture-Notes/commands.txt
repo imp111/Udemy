@@ -1,0 +1,96 @@
+whoami							-		print effective UserID
+
+id								-		print real user, effective user and group IDs.
+
+tty								-		prints the file name of the terminal connected to the standart input.
+
+su (switch user)				- 		run a command with substitute user and group ID.
+	-
+	-l
+	--login		- provide environment
+
+sudo (privallage escalation)	-		execute a command as another user (lets a unprivaleged user to run command as root or other user).
+
+man [section] command			-		man pages for each command (VERY IMPORTANTE!).	
+	-f command - what is the command.
+	-k command - apropos (how does the command work).
+	
+cd (change directory)			-		
+
+pwd (print working directory)	- 
+
+ls (list)
+
+touch
+
+mkdir (make directory)
+
+chown
+
+chgrp (change group)
+
+chmod (change mod)
+
+umask
+
+rmdir (remove directory)
+
+cp (copy)
+
+mv (move)
+
+rm (remove)
+
+ln [Option] [-T] target link_name	-	make links between files
+	-s
+
+df [Option] [file]			- report file system disk space usage
+	-h
+	-i
+	-T
+	--si
+	-P
+	
+du (disk usage) [option] [file]		-	estimate file space usage
+	-h
+	-s
+	-x
+
+stat [option] [file]		-	display file or file system status
+	-L
+	-c, --format
+
+cat
+	-n
+more
+
+less
+
+head
+
+tail
+	-f
+
+xxd	[options] [infile [outfile]]	-	make a hexdump or do the reverse
+
+xargs [options] [command [initial-arguments]]	- build and execute command lines form standart input
+	-0, --null
+	-I
+	-n
+
+find [options] [starting-point] [expression]	- search for filesi n a directory hierarchy
+	-o
+	-a
+	-printf
+	-print0
+	-print
+	-ls
+	-exec
+
+tar							- an archiving utility
+	-c,x,t,f,v
+	-a, --auto-compress
+	-J, --xz
+
+xz [option] [file]			- compress or decompress .xz files
+	-d

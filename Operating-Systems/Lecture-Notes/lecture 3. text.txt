@@ -1,0 +1,84 @@
+3to uprajnenie
+Option ot Synopsisa - flagovete
+V Super Blocks ima META info za FS i Inode Table. Meta Info za FS e FS type, Datablocks size
+offf bezpolezen pasaj za FS struktura
+niva na indirektnost v inodes
+symlink moje da vodi i kam file ot druga FS, v symlink e zapisan prosto nqkakav pat (moje i tam da nqma file)
+Epoch_time pazi atime, ctime i mtime (ot 1 qnuari 1970g. 00:00:00)
+interesno date  +%s
+%A - permissions v tekstov format
+%a permissions v 4islov format
+file extensions are part of the file name, demek nqma zna4enie ot extensiona
+MIMEmagic - check it - tarsi format pattern v random file i razbira kakav e file
+shift + G - tarsi se file
+/[link] [pattern, poredica ot simvoli] enter - dava ni na opredelen text v tekstoviq file, parvoto mqsto kadeto ni puskastava vapros za less, za da idem na sledva6toto spomenavane otiva s n, a za prednoto shift +n
+binary file i text file difference
+ctrl + c - kills process
+arhivirane - ot mnogo ne6ta- stava edno ne6to, procesa e obratim
+compressing - hufman encoding - edno edno golqmo, edno malko
+argc- broika command line arguments + 1,
+argv - char** (pointer kam pointer kam promenliva ot tip char)
+3 streama - STDIN, STDOUT, STDERR(programata reportva error sastoqniq)
+STDOUT na programata e naso4en kam STDIN na shella (temrinala)
+<> - redirection
+pipe - cmd1 | cmd2 toest STDOUT cmd1 otiva v STDIN na cmd2
+regulqrni izrazi
+simvoli sas specialno zna4enie -
+
+direct match
+
+ . e kakavto i da e simvol
+napr a.c = aac,abc,acc,adc...
+
+
+quantifiers:+ - 1 ili pove4e sre6taniq
+? - 0 ili 1 sre6taniq na atoma vlqvo
+* - 0 ili pove4e sre6taniq na atoma vlqvo
+
+Tova sa anchors:
+
+$ - krai na red
+^-na4alo na red
+
+
+
+moje bi, tova e pod vapros 
+////[ - na4alo na klas, sa6to e atom, ne samo bukva [abcd] + = a+ or b+ or c+ or d+
+b [aeuyi] d = bad or bed or bud or byd or bid
+[a-z], [0-9] = 1 or 2 or ....
+[^abc] - vsi4ko bez abc stava
+[0-9]+ \+[0-9]+, \ - sledva6tiq simvol e s normalno zna4enie ne e specilen simvol
+ ////
+
+() - grupa
+grupite mogat da se nestvat
+
+ab(cd)+vg = abcdvg or abcdcdvg or abcdcdcdvg
+
+
+Komandi: 
+df - disk free info za zaetostta na file system, -i
+du - disk usage, kolko disk izpolzva dadena dir ili file, -h (human readable format), -max ne6to si
+stat - essential, dava info za file ili dir, by default - summary, -c - kakva info ni trqbva napr stat -c "%A %a" filename, -L - pokazva file kam koito symlinka so4i
+file - vzimame info za tipa na file ot argumenta
+cat - dava cqloto sadarjanie na file, more, less, head, tail
+head - dava samo na4aloto na file, by default first 10 lines
+tail - dava samo kraq na file, by default last 10 lines, 	-f interesen flag
+less - pager, otvarq prozorec za interaktivno sadarjanie na file, more e podobno, 4ekni im man pages
+prednite 4 za tekstovi files
+reset-clean start i clear - mesti redovete nagore 4istqt terminala
+strings - displays ASCII text inside binary files
+xxd - outputa se razdelq na 3 4asti, parvata 4ast, 4isla v 16 broina s-ma i pokazva nomera na parviq bait ot reda na 2ta kolona v teksta, a 2ta kolona pokazva samite baitove, a tretata - tqhnata ascii reprezentacii
+xargs - obra6tenie kam druga komanda, important, man stranica
+find - vaprosi kam FS, mnogo mo6tna, man page
+tar - -J, -f -v -c -x, tar -cvJf, tar - xvJf arch_name file1, file2, file3.... , kompresirane i arhivirane
+sort - sortira vsi4ko na STDIN, toest sort < /etc/passws z.B
+paste
+wc - word count, -l-broika na redove, -w - word count, -c, -m
+cut- reje 4ast ot file (obiknoveno po koloni), -f 
+tr - translate, mojem da smenim malko a s golqmo napr. tr -d, trie opredeleni simvoli
+grep - tarsene na pattern v text 
+
+
+
+

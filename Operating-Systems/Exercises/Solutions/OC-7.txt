@@ -1,0 +1,9 @@
+realUID, realGID- koi e sazdal procesa
+effective UID, GID - checks in Kernel se izvar6vat za tqh
+saves UID, GID - proces eskalira i deeskalira privilegii
+RSS - resident set size - cqloto koli4estvo pamet alokirano za procesa
+VSS - virtual set size - poiskanoto koli4estvo pamet
+PSS - proportional set size - RSS + Shared library size/ proccess count, using the Shared library
+USS - unique set size - vsi4ko na procesa bez shared library
+
+USS<=PSS<=RSS<=VSS

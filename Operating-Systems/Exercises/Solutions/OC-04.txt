@@ -1,0 +1,30 @@
+man 7 regex, man stranica, check it
+globing - referirat se mnogo files
+Primeri:
+cat /tmp/* (z.B)
+prefix {pattern}suffix
+cat /tmp ((prefix)/{pattern}/suffix -> cat /tmp/{1, 2, 3, 4, 5, 6}
+? - one character
+*-many characters
+
+Order of evaluation 
+
+cat a{1, 2, 3}* - {} se izpalnqva predi globing
+
+'' - vsi4ko vatre nqma specialno zna4enie
+'', "" - predi {} i predi globing
+"" - vsi4ko vatre nqma specialno zna4enie, samo $ ima v tozi slu4ai
+$() - otvarq subshell - ima nai-visok prioritet
+z.B. file 2 $(echo file 2)
+     cat $(find -type f -exec stat -c "%s %n"{}\;sort-n -t " "-k1| tail -n 1|cut -d " " -f2) $(=/= samo 4e s head)
+
+
+komandi:
+
+grep, -r (recursive), -n (line numbers), -i (case insensitive), -v (inverts match, only lines without match)
+sed - stream editor  sed "s/pattern/text/g" [file]
+awk - stream editor awk '{print$4}' - printi 4 kolona ot vseki red
+sort - sortira sort -t
+uniq - maha vsi4ki duplikati (posleovatelni redove), -c
+sort|uniq - 4esto se izpolzva 
+vim tutor

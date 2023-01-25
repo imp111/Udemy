@@ -1,0 +1,35 @@
+Standart Stream:
+	0 - stdin	- input  (keyboard)
+	1 - stdout	- output (display)
+	2 - stderr	- error message (display)
+
+GUI - graphical user interface
+
+User ID (UID)
+	- privaleged user - root (UID 0)	Root can do anything, whenever, however he wants. He is the almighty one.
+	- unprivaleged user 				Everyone exept root are unprivaleged. They cant do everything like root.
+Group ID (GID)
+
+whoami						-		print effective UserID
+
+	aleksandar (real user ID)
+	1000	   (effective user ID)
+
+id								-		print real user, effective user and group IDs.
+tty								-		prints the file name of the terminal connected to the standart input.
+su (switch user)				- 		run a command with substitute user and group ID.
+sudo (privallage escalation)	-		execute a command as another user (lets a unprivaleged user to run command as root or other user).
+man [section] command			-		man pages for each command (VERY IMPORTANTE!).
+	Number of sections:
+	- 1 - Executable programs or shell commands.
+	- 2 - System calls (functions provided by the kernel).
+	- 3 - Library calls (functions within program libraries).
+	- 4 - Special files (usually found in /dev).
+	- 5 - File formats and conventions eg /etc/passwd
+	- 6 - Games
+	- 7 - Miscellaneous
+	- 8 - System administration commands (usually only for root).
+	- 9 - Kernel routines [Non standard]
+	
+man -f command - what is the command.
+man -k command - apropos (how does the command work).
