@@ -289,3 +289,5 @@ This repository contains all of my exercises and homeworks from all courses at U
 - Module 9 - Terraform
   - Terraform for AWS Cloud automation
   - Cloudformation for AWS loud automation
+
+## :white_check_mark: Operating Systems
