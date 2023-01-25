@@ -1,11 +1,11 @@
 # [Complete Linux Training Course to Get Your Dream IT Job 2023](https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/) :white_check_mark:
-- [Module 1 – Understanding Linux Concepts](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/01.%20System%20Access%20and%20File%20System)
+- [Module 1 – Understanding Linux Concepts]()
   - What is Linux?   
   - Everyday use of Linux   
   - Unix vs. Linux   
   - Quiz, Homework and Handouts 
 
-- Module 2 – Download, Install and Configure   
+- [Module 2 – Download, Install and Configure]()
   - What is Oracle Virtual Box?   
   - Downloading and Installing Oracle Virtual Box
   - Creating virtual machine   
@@ -19,7 +19,7 @@
   - Who Uses Linux?   
   - Quiz, Homework and Handouts  
 
-- Module 3 – System Access and File System   
+- [Module 3 – System Access and File System](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/01.%20System%20Access%20and%20File%20System)   
   - Accessing Linux system
   - Download and install Putty   
   - Connect Linux VM via Putty   
@@ -37,7 +37,7 @@
   - Soft and Hard Links (ln)  
   - Quiz, Homework and Handouts   
 
-- Module 4 – Linux Fundamentals  
+- [Module 4 – Linux Fundamentals](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/02.%20Linux%20Fundamentals)  
   - Commands Syntax  
   - File Permissions (chmod)  
   - File Ownership (chown, chgrp)
@@ -54,7 +54,7 @@
   - Linux vs. Windows Commands  
   - Quiz, Homework and Handouts   
 
-- Module 5 – System Administration  
+- [Module 5 – System Administration](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/03.%20System%20Administration)  
   - Linux File Editors (vi text editor)
   - sed Command   
   - User account management  
@@ -77,7 +77,7 @@
   - SOS Report   
   - Quiz, Homework and Handouts 
 
-- Module 6 – Shell Scripting 
+- [Module 6 – Shell Scripting](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/04.%20Shell%20Scripting) 
   - Linux Kernel   
   - What is a Shell?
   - Types of Shells 
@@ -91,7 +91,7 @@
   - Shell History 
   - Command history   
 
-- Module 7 – Networking, Servers and System Updates  
+- [Module 7 – Networking, Servers and System Updates](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/05.%20Networking%2C%20Services%20and%20System%20Updates)  
   - Enabling internet in Linux VM  
   - Network Components  
   - Network files and commands (ping, ifconfig, netstat, tcpdump, networking config files)  
@@ -116,7 +116,7 @@
   - OpenLDAP Installation  
   - Quiz, Homework and Handouts 
 
-- Module 8 – Disk Management and Run Levels
+- [Module 8 – Disk Management and Run Levels](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/06.%20Disk%20Management%20and%20Run%20Levels)
   - System run levels
   - Linux Boot Process
   - Message of the Day
