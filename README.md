@@ -1,7 +1,7 @@
 # [Udemy: Online Courses - Learn Anything, On Your Schedule](https://www.udemy.com/)
 This repository contains all of my exercises and homeworks from all courses at Udemy.
 
-## [Complete Linux Training Course to Get Your Dream IT Job 2023](https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/) :white_check_mark:
+## :white_check_mark: [Complete Linux Training Course to Get Your Dream IT Job 2023](https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/) 
 - Module 1 – Understanding Linux Concepts
 - Module 2 – Download, Install and Configure   
 - Module 3 – System Access and File System   
@@ -20,7 +20,7 @@ This repository contains all of my exercises and homeworks from all courses at U
 - C Processes
 - C Pipes
 
-## [The Complete Networking Fundamentals Course. Your CCNA start](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/) :white_check_mark: 
+## :white_check_mark: [The Complete Networking Fundamentals Course. Your CCNA start](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/) 
 - Network basics
 - Network architectures (OSI Model)
 - What are hubs, switches, routers?
