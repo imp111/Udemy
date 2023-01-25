@@ -2,14 +2,14 @@
 This repository contains all of my exercises and homeworks from all courses at Udemy.
 
 ## :white_check_mark: [Complete Linux Training Course to Get Your Dream IT Job 2023](https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/) 
-- Module 1 – Understanding Linux Concepts
-- Module 2 – Download, Install and Configure   
-- Module 3 – System Access and File System   
-- Module 4 – Linux Fundamentals   
-- Module 5 – System Administration  
-- Module 6 – Shell Scripting 
-- Module 7 – Networking, Servers and System Updates  
-- Module 8 – Disk Management and Run Levels 
+- Understanding Linux Concepts
+- Download, Install and Configure   
+- System Access and File System   
+- Linux Fundamentals   
+- System Administration  
+- Shell Scripting 
+- Networking, Servers and System Updates  
+- Disk Management and Run Levels 
 
 ## :white_check_mark: [Operating Systems](https://github.com/avelin/fmi-os)
 - Commands
