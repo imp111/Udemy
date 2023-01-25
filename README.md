@@ -11,7 +11,7 @@ This repository contains all of my exercises and homeworks from all courses at U
 - Module 7 – Networking, Servers and System Updates  
 - Module 8 – Disk Management and Run Levels 
 
-## :white_check_mark: Operating Systems
+## :white_check_mark: [Operating Systems](https://github.com/avelin/fmi-os)
 - Commands
 - Pipes
 - Processes
