@@ -1,5 +1,5 @@
 # [Complete Linux Training Course to Get Your Dream IT Job 2023](https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/) :white_check_mark:
-- Module 1 – Understanding Linux Concepts
+- [Module 1 – Understanding Linux Concepts](https://github.com/imp111/Udemy/tree/main/Complete%20Linux%20Training%20Course%20to%20Get%20Your%20Dream%20IT%20Job%202023/Lectures/01.%20System%20Access%20and%20File%20System)
   - What is Linux?   
   - Everyday use of Linux   
   - Unix vs. Linux   
