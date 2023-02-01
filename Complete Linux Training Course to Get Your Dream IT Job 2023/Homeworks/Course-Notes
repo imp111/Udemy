@@ -70,3 +70,15 @@ cp - copy file/files
 	cp -R source desitnation - copy directories recursivly
 mv - move (can be used to rename files aswell)
 
+- Streams:
+0 - stdin
+1 - stdout
+2 - stderr
+
+>> - append to a file
+> - overwrite file
+
+- Standard output to file: 		Use case: (echo "testing tee" | tee testingFile)
+tee
+
+
