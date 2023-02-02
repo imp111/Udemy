@@ -1,19 +1,20 @@
 1. Practice Linux command syntax with command, options and arguments
 
 2. List files in your home directory by the last time they were modified
-
+	ls -t
 3. Move jerry, george, kramer and puddy files into seinfeld directory
-
+	mv ./jerry ./george ./kramer ./puddy /home/seinfeld/
 4. Move homer, bart, marge, lisa files in simpsons directory
-
+	mv homer bart marge lisa /home/simpsons/
 5. Move clark, luther and lois files in superman directory
-
+	mv clark luther lois /home/superman/
 6. List the content of seinfeld directory by the last time they were modified
-
+	ls -t seinfeld
 7. Create 2 new files in seinfeld directory, eliane and newman
-
+	cd /home/seinfeld/
+	touch eliane newman
 8. change file permission of eliane to remove read access from everyone
-
+	
 9. change file permission of newman to add write permissions to only group
 
 10. Become root and cd into your home directory (e.g. /home/iafzal). Then create 2 new files superman and zad in superman directory
