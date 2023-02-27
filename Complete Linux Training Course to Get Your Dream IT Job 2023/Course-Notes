@@ -135,7 +135,8 @@ wc
 
 
 - Networking Basics:
-
+	
+	Basic Terms:
 	- IP (Internet Protocol) - identity number for each user in the network
 		- IPv4
 		- IPv6
@@ -146,6 +147,9 @@ wc
 
 	- Interface (usually this is the Network Card or Wifi Card on laptops) - this is the device that allows the computer to connect to networks and Internet.
 	- MAC Address - is the physical address of the Interface card. Every Interface card has a MAC Address. It is permanent and it cannot be changed.	
+	
+	- OUI (Organizationally Unique Identifier)
+	- NIC (Network Interface Controller)
 
 	Address Class		Bits for Subnet Mask			Subnet Mask	Subnet Mask
 
@@ -153,5 +157,7 @@ wc
 	Class B			11111111 11111111 00000000 00000000	255.255.0.0	/16
 	Class C			11111111 11111111 11111111 00000000	255.255.255.0	/24
 
+	
+	Network File and Commands:
 
 
