@@ -132,3 +132,26 @@ wc (word count - returns a count of lines, words or bytes)
 cut
 sed
 wc
+
+
+- Networking Basics:
+
+	- IP (Internet Protocol) - identity number for each user in the network
+		- IPv4
+		- IPv6
+	- Subnet Mask - 32-bit number that masks an IP Address, and divides the IP address into network and host address.  
+	- Gateway (usualy the ip address of the router in a home network) - the gate that is used to access networks outside of our local area network (a.k.a. the Internet).
+	
+	- Static vs DHCP IP Addresses - when Static IP is set, it does not change. When the PC is restared it stays the same, while if we use DHCP, the computer will automatically pick one IP from pool of available addresses and it will change everytime we start the computer.
+
+	- Interface (usually this is the Network Card or Wifi Card on laptops) - this is the device that allows the computer to connect to networks and Internet.
+	- MAC Address - is the physical address of the Interface card. Every Interface card has a MAC Address. It is permanent and it cannot be changed.	
+
+	Address Class		Bits for Subnet Mask			Subnet Mask	Subnet Mask
+
+	Class A			11111111 00000000 00000000 00000000	255.0.0.0	/8
+	Class B			11111111 11111111 00000000 00000000	255.255.0.0	/16
+	Class C			11111111 11111111 11111111 00000000	255.255.255.0	/24
+
+
+
