@@ -18,6 +18,7 @@ File System Structure:
 Commands:
 whoami - shows the current logged in user
 pwd - print working directory
+date - current date
 
 - Navigating through the files system
 cd - change directory
@@ -141,9 +142,26 @@ wc (word count)
 
 	Compress and Decompress Files:
 	- tar			- takes a bunch of files and puts them in one container (doesn't compress as much)
-	- gzip  		- actually compresses the files
-	- gunzip or gzip -d 	- unzip a archive
+		- tar cvf name.tar whaterverYouAreTaring - puts everything into one tar file
+		- tar xvf name.tar 			 - extract everything from tar file
+	- gzip fileToCompress  				 - compresses a file
+	- gunzip or gzip -d fileToDecompress 		 - unzip a archive
 
+	Truncate File Size (Shrink Size of File):
+
+	Truncate is not the same as compression. Truncate will chop the file and you will lose information from the file.
+
+	- truncate -s 10 fileName		- cuts the size of the file to 10 bytes
+
+	Combining and Splitting Files:
+
+	Multiple files can be combined to one, and one to file can be split to many files.
+
+	- cat file1 file2 file3 file4 > file5
+	- split file4
+		- split -l 10 fileToSplit.txt fileToPutTheTextInto.txt	- put 10 lines in each of the fileToPutTheTextTo
+	
+	
 
 - Networking Basics:
 	
