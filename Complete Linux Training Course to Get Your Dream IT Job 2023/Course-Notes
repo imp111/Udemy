@@ -135,6 +135,15 @@ sed
 
 wc (word count)
 
+	Compare Files:
+	- diff - compare files line by line
+	- cmp  - compare files byte by byte
+
+	Compress and Decompress Files:
+	- tar			- takes a bunch of files and puts them in one container (doesn't compress as much)
+	- gzip  		- actually compresses the files
+	- gunzip or gzip -d 	- unzip a archive
+
 
 - Networking Basics:
 	
@@ -364,7 +373,11 @@ wc (word count)
 
 	Rsync a file from a remote machine (Execute from client PC)
 	- touch serverFile
-	- rsync -avzh username@ipaddressOfServer:destinationOfTheFileOnClientPC directoryToSendTheBackupTo
+	- rsync -avzh username@ipaddressOfServer:destinationOfTheFileOnServerPC directoryToSendTheBackupToOnClientPC
+
+	System Updates and Repos (Package Managers):
+
+
 
 	
 
