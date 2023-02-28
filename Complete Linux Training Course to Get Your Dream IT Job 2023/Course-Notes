@@ -283,3 +283,52 @@ wc (word count)
 		- systemctl reboot
 		- ip address show
 
+	Download Files and Apps:
+
+	wget http://website.com/filename
+	yum
+
+	Curl and Ping commands:
+
+	curl - get the content of a webpage
+	ping
+
+	FTP (File Transfer Protocol, Port 21):
+	
+	FTP is used to transfer files between client and a server on a computer network.
+	Protocol - set of rules used by computers to communicate.
+	
+	Install and Configure FTP on the remote server
+	- rpm -qa | grep ftp 	- if grep doesn't find ftp, we have to install it
+	- yum install vsftpd
+	- vi /etc/vsftpd/vsftrpd.conf		- ftp configuration file
+		- anonymous_enable=NO		- disable anonymous login
+		- ascii_upload_enable=YES	
+		- ascii_download_enable=YES
+		- ftpd_banner=FTP Welcome Message
+		- use_localtime=YES
+
+		- systemctl start vsftpd	- to start the ftp service
+		- systemctl enable vsftpd	- to enable the ftp service
+		- systemctl stop firewalld	- to disable the firewall so we can transfer files between the two machines
+
+	Install FTP client on the client server
+	- yum install ftp
+	
+	Commands to transfer file to the FTP Server
+	- ftp [destination_ip_address]
+	- username and password
+	- bi
+	- hash
+	- put [file_name]  - to send a file
+	- bye	- to exit
+
+	Secure Copy Protocol (Port 22):
+
+	SCP helps transfer computer files ecurely from a local to a remote host (similar to FTP, but adds authentication and security)
+	
+	Transfer file to the remote server:
+	- Login as user from client 
+	- Select file to transfer
+	- scp fileName username@ipaddress:destination
+	- enter username and password
