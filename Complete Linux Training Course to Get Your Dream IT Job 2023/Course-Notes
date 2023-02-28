@@ -332,3 +332,43 @@ wc (word count)
 	- Select file to transfer
 	- scp fileName username@ipaddress:destination
 	- enter username and password
+
+	Remote Synchronization (rsync, Port 22):
+	
+	rsync is utility for transferring adn synchronizing files within the same computer or to a remote computer by comparing the modification times and sizes of files.
+	It is faster than ftp and scp. Mostly used to backup the files and directories from one server to another.
+	
+	rsync and scp use the same port (Port 22) as ssh, so you dont need to download it.
+	
+	How it works?
+	We send file from Client to Server. After that if there are changes done to the file and send again to the Server, the entire file will not be send, only the difference between the current versions on the Server and the Client.
+
+	Client				Server
+	2M		->		2M 	- First sending of fileA
+	10M		->		10M	- There we changes done to the file, so now the 10M will be subtracted from the 2M on the Server, and only 8M will be send to the Server.
+
+	Install rsync on client machine
+	- yum install rsync - install rsync on the client computer (no need to install it on the server)
+	
+	Rsync a file on a clienit machine (very easy way to create a backup on the client pc)
+	- tar cvf backup.tar directory 	 - create a archive of a directory
+	- mkdir /tmp/backups		 - create a backup directory in the tmp folder
+	- rsync -zvh fileName directory  - send the file with rsync from client to server
+
+	Rsync a directory on a local machine (create a backup of a directory on the client pc)
+	- rsync -azvh directoryToBackup directoryToStoreTheBackup
+
+	Rsync a file to a remote machine
+	- mkdir /tmp/backups 	- create backups folder on the remote server
+	- rsync -avz backup.tar username@ipaddress:directoryToSendTheBackupOnTheServer
+
+	Rsync a file from a remote machine (Execute from client PC)
+	- touch serverFile
+	- rsync -avzh username@ipaddressOfServer:destinationOfTheFileOnClientPC directoryToSendTheBackupTo
+
+	
+
+
+
+	
+
