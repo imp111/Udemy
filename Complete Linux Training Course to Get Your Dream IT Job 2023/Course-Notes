@@ -187,6 +187,71 @@ wc (word count)
 	- lo	 - 127.0.0.1 (the loop back interface - it is used, so the PC can communicate with itself. It is used for diagnostics).
 	- virb0 - Virtual Bridge 0 is used for NAT (Network Address Translation). Virtual environments (virtual machines) use it to connect to outside networks (Internet, etc.).
 	
-	Commands:
+	Commands
 	- ethtool [interface name] - gives you information about the interface (duplex type, link modes, port and others).
+	
+	NIC Bonding:
+	
+	Network Interface Card Bonding (Network Bonding) - is a combination of multiple NICs into a single bond interface. It's purpose is to provide high availability (we have two ports and combine them together, each port is 1G, so now we have 2G. This is used for high availability and link aggregation) and reundancy (we get two port and combine them, if one of them dies, the other one keeps working).
 
+	How is Bonding done
+	- modprobe bonding - install the bonding driver
+
+	- modinfo bonding - shows if the bonding driver is already installed or not (if description is equal to Ethernet Channel Bonding Driver, then the driver is ready and installed).
+	
+	- create /etc/sysconfig/network-scripts/ifcfg-bond0 - create a file called ifcfg-bond0, with these parameters. This is the bonding file.
+		- DEVICE=bond0 
+		- TYPE=Bond 	
+		- Name=bond0	(name of the bond)
+		- BONDING_MASTER=yes (the name of the master, yes - it is a master of itself)
+		- BOOTPROTO=none (this is the boot protocol, none - no boot protocol | static - if you want to assign static ip address)
+		- ONBOOT=yes (yes - is to enable it when system reboot, no - doesn't start when system reboots)
+		-IPADDR=192.168.1.80 	(assign IP address)
+		-NETMASK=255.255.255.0 	(assign netmask)
+		-GATEWAY=192.168.1.1	(assign gateway)
+		-BONDING_OPTS="mode=5 miion=100" 
+			(Modes: 
+			0 - Round Robin (Packets are sequentially transmitted/recieved through each interfaces one by one)
+			Fault Tolerance = No, Load Balancing = Yes
+
+			1 - Active Backup (One NIC active while another NIC is asleep. If the active NIC goes down, another NIC becomes active. Only supported in x86 environments.)
+			Fault Tolerance = Yes, Load Balancing = No
+
+			2 - XOR (exclusive OR) (In this mode, the MAC address of the slave NIC is matched up against the incoming request's MAC and once this connection is established, the same NIC is used to transmit/recieve for the destination MAC)
+			Fault Tolerance = Yes, Load Balancing = Yes
+
+			3 - Broadcast (All transmissions are sent on all slaves)
+			Fault Tolerance = Yes, Load Balancing = No
+
+			4 - Dynamic Link Aggregation (Aggregated NICs act as one NIC which results in a higher throughput, but also provides failover in the case that a NIC fails. Dynamic Link Aggregation requires a switch that support IEEE 702.3ad)
+			Fault Tolerance = Yes, Load Balancing = Yes
+
+			5 - Transmition Load Balancing (TLB) (The outgoing traffic is disturbed depending on the current load on each slave interface. Incoming traffic is recieved by the c urrent slave. If the receiving slave fails, another slave takes over the MAC address of the failed slave)
+			Fault Tolerance = Yes, Load Balancing = Yes
+
+			6 - Adaptive Load Balancing (ALB) (Unlike DLA, ALB does not require any particular switch configuration. ALB is only supported in x86 environments. The receiving packets are load balanced through ARP negotitation)
+			Fault Tolerance = Yes, Load Balancing = Yes
+			
+			Miion - specifies the MII link monitoring frequency in millseconds. Determines how often the link state of each slave is inspected for link failures.
+	
+	- edit /etc/sysconfig/network-scripts/ethernet1 - edit the first interface file (enp0s3), delete the entire content of the file and add the follwing lines:
+		TYPE=Ethernet
+		BOOTPROTO=none
+		DEVICE=enp0s3 (the name of the first interface)
+		ONBOOT=yes
+		HWADDR="mac address from the ifconfig"
+		MASTER=bond0
+		SLAVE=yes
+		
+	- edit /etc/sysconfig/network-scripts/ethernet2
+		TYPE=Ethernet
+		BOOTPROTO=none
+		DEVICE=enp0s8 (the name of the second interface)
+		ONBOOT=yes
+		HWADDR="mac address from the ifconfig"
+		MASTER=bond0
+		SLAVE=yes
+
+	- restart network - systemctl restart network
+	- test to verify the configuration - ifconfig 
+	- /proc/net/bonding/bond0 - bond file that contains interface setting like bonding mode and slave interface
