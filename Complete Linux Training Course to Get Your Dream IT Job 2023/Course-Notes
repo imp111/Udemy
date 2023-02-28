@@ -179,3 +179,14 @@ wc (word count)
 		- netstat - tell you about the traffic flow of the network, gateway, to which inteface it is going and others.
 			- rnv
 		- tcpdump - traces every transaction that is coming in and going out of the machine (every packet that goes in and out).
+
+	NIC (Network Interface Card) Information:
+
+	Exampple of NIC
+	- enp0s3 - Ethernet interface card
+	- lo	 - 127.0.0.1 (the loop back interface - it is used, so the PC can communicate with itself. It is used for diagnostics).
+	- virb0 - Virtual Bridge 0 is used for NAT (Network Address Translation). Virtual environments (virtual machines) use it to connect to outside networks (Internet, etc.).
+	
+	Commands:
+	- ethtool [interface name] - gives you information about the interface (duplex type, link modes, port and others).
+
