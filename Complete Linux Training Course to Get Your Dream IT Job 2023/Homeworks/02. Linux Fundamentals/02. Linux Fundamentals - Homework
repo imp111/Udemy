@@ -14,7 +14,7 @@
 	cd /home/seinfeld/
 	touch eliane newman
 8. change file permission of eliane to remove read access from everyone
-	
+	chmod a-r eliane	
 9. change file permission of newman to add write permissions to only group
 
 10. Become root and cd into your home directory (e.g. /home/iafzal). Then create 2 new files superman and zad in superman directory

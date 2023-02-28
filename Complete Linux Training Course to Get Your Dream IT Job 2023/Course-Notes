@@ -71,6 +71,28 @@ cp - copy file/files
 	cp -R source desitnation - copy directories recursivly
 mv - move (can be used to rename files aswell)
 
+- File Permissions:
+chmod 
+
+2 Methods
+- Letters 
+	- r - read
+	- w - write
+	- x - execute
+
+	- u - user
+	- g - group
+	- o - others
+	- a - all
+- Numbers
+	- 4 - read
+	- 2 - write
+	- 1 - execute
+
+chmod a+r fileName 	- adds read persmissions for all users
+chmod a-r fileName 	- removes read permissions for all users
+chmod 222 fileName	- gives write and execute permissions for all users
+
 - Streams:
 0 - stdin
 1 - stdout
