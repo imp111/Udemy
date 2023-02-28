@@ -255,3 +255,31 @@ wc (word count)
 	- restart network - systemctl restart network
 	- test to verify the configuration - ifconfig 
 	- /proc/net/bonding/bond0 - bond file that contains interface setting like bonding mode and slave interface
+
+	Network Utilities:
+	
+	Network Manager (you can create bonds and teams)
+		- nmtui (network manager text user interface) - make changes to a interface
+		- nmcli (network manager command line interface)
+			- nmcli device - returns all interfaces
+		- nm-connection-editor (graphical management tool) 
+		- GNOME settings (only on GNOME desktop - it has a GUI)
+
+		Edit Static IP using nmcli
+		- nmcli device
+		- nmcli connection modify enp0s3 ipv4.addresses 10.253.1.211
+		- nmcli connection modify enp0s3 ipv4.gateway 10.253.1.1 (routes ip address)
+		- nmcli connection modify enp0s3 ipv4.method manual
+		- nmcli connection modify enp0s3 ipv4.dns 8.8.8.8 (google's dns server)
+		- nmcli connection down enp-s3 && nmcli connection up enp0s3
+		- ip address show enp0s3
+
+		Add secondary static IP using nmcli
+		- nmcli device status
+		- nmcli connection show --active 	(show active connections)
+		- ifconfig
+		- nmcli connection modify enp0s3 +ipv4.addresses 10.0.0.211/24
+		- nmcli connection reload
+		- systemctl reboot
+		- ip address show
+
