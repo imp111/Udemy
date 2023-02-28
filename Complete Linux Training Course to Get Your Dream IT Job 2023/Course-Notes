@@ -130,8 +130,10 @@ wc (word count - returns a count of lines, words or bytes)
 	
 
 cut
+
 sed
-wc
+
+wc (word count)
 
 
 - Networking Basics:
@@ -159,5 +161,21 @@ wc
 
 	
 	Network File and Commands:
+	- Interface Detection
+	- Assign IP Address
 
+	- Network Configuration Files
+		- /etc/nsswitch.conf - tells the system where it should resolve its host name to ip address.
+		- /etc/hosts - this is where you define your system host name and IP Address (it's like a small version of DNS).
+		- /etc/sysconfig/network (CentOS 6) - This is the file where you specify your host name and other parameters.
+		- /etc/hostname (CentOS 7) - The file where you specify your host name.
+		- /etc/sysconfig/network-scripts/ifcfg-nic - this is the file of the computer interface (network card). Here you can define IP, Gateway, Subnet mask, etc.
+		- /etc/resolv.conf - specifies the DNS server
 
+	- Network Commands
+		- ping	- send and recieve packets to specific IP address
+		- ifconfig - shows the computer's interfaces
+		- ifup / ifdown - you can shut down and start different interfaces
+		- netstat - tell you about the traffic flow of the network, gateway, to which inteface it is going and others.
+			- rnv
+		- tcpdump - traces every transaction that is coming in and going out of the machine (every packet that goes in and out).
