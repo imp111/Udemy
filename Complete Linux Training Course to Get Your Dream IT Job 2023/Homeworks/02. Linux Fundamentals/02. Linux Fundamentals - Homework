@@ -2,59 +2,102 @@
 
 2. List files in your home directory by the last time they were modified
 	ls -t
+
 3. Move jerry, george, kramer and puddy files into seinfeld directory
 	mv ./jerry ./george ./kramer ./puddy /home/seinfeld/
+
 4. Move homer, bart, marge, lisa files in simpsons directory
 	mv homer bart marge lisa /home/simpsons/
+
 5. Move clark, luther and lois files in superman directory
 	mv clark luther lois /home/superman/
+
 6. List the content of seinfeld directory by the last time they were modified
 	ls -t seinfeld
+
 7. Create 2 new files in seinfeld directory, eliane and newman
 	cd /home/seinfeld/
 	touch eliane newman
+
 8. change file permission of eliane to remove read access from everyone
-	chmod a-r eliane	
+	chmod a-r eliane
+
 9. change file permission of newman to add write permissions to only group
+	chmod g+w newman
 
 10. Become root and cd into your home directory (e.g. /home/iafzal). Then create 2 new files superman and zad in superman directory
+	su root
+	cd ~
+	mkdir superman
+	cd mkdir
+	touch superman zad
 
 11. Change ownership of zad file from root to your username
+	chown "$(whoami)" zad
 
 12. Change group ownership of zad from root to your username
+	chgrp "$(whoami)" zad
 
 13. Then move superman file to /tmp directory
+	mv /home/"$(whoami)"/superman /tmp/
 
 14. Remove superman file from /tmp directory
+	rm /tmp/superman
 
 15. Exit out of root account
+	exit
 
 16. Go back to superman directory in your home directory and add this line to zad file "zad is a bad character in superman movie"
+	cd ~/superman/
+	echo "zad is a bad charecter in superman movie" >> zad
 
 17. Then go seinfeld directory and create a new file seinfeld.  
+	cd ~/seinfeld/
+	touch senfeld
 
 18. Add 5 seinfeld characters name in seinfeld file. Jerry Seinfeld, George Costanza, Eliane Benis, Cosmo Kramer, and David Puddy
+	echo "Jerry Seinfeld" > seinfeld.txt
+	echo "George Seinfeld" >> seinfeld.txt
+	echo "Eliane Benius" >> seinfeld.txt
+	echo "Cosmo Kramer" >> seinfeld.txt
+	echo "David Puddy" >> seinfeld.txt
 
 19. Become root user again
+	su root
+	password
 
 20. Do cat /var/log/messages and output to a file called mesg-new in your home directory (e.g. /home/iafzal)
+	cat /var/log/messages > /home/homeUser/mesg-new
 
 21. Read the mesg-new file with cat, more and less commands and practice
+	cat mesg-new
+	more mesg-new
+	less mesg-new
 
 22. View the first 10 lines of mesg-new file and output to a file name mesg-h10
+	head -10 mesg-new > mesg-h10.txt
 
 23. View the last 20 lines of mesg-new file and output to a file name mesg-t20
+	tail -20 mesg-new > mesg-t20.txt
 
 24. Exit out of root user
+	exit
 
 25. Go to seinfeld directory in your home directory and create a new file"seinfeld-characters"
+	cd ~/seinfeld/
+	touch seinfeld-charecters
 
 26. Add text to seinfeld-character file using echo command.  Each character  should be in one line, "Jerry Seinfeld, Cosmo Kramer, Eliane Benes,  George Costanza, Newman Mailman, Frank Costanza, Estelle Costanza, Morty  Seinfeld, Helen Seinfeld, Babes Kramer, Alton Benes, J Peterman, George  Steinbrenner, Uncle Leo, David Puddy, Justin Pit and Kenny Bania"
-
+	echo -e "Jerry Seinfeld\nCosmo Kramer\nEliane Benes\nGeorge Costanza\nNewman Mailman\nFrank Costanza\nEstelle Costanza\nMorty  Seinfeld\nHelen Seinfeld\nBabes Kramer\nAlton Benes\nJ Peterman\nGeorge\nSteinbrenner\nUncle Leo\nDavid Puddy\nJustin Pit\nKenny Bania" >> seinfeld-character
+	
 27. Use cut command to cut the first 4 letters of each line from seinfeld-characters file and output to a different file name (name = filters-files)
-
+	cut -c 1-4 seinfeld-charecters > name
+	
 28. Use awk command to get only the 2nd column of seinfeld-characters and output to the filters-files without removing any other text from it
+	cat seinfeld-charecters | awk -F ' ' '{print $2}'
 
 29. Use grep command to only grep seinfeld and output to a new file call it seinfeld-family
+	grep "seinfeld" seinfeld-charecters > seinfeld-family
 
 30. Use sort command, uniq and wc command to practice whichever way you like by creating new files or working with existing files
+	sort seinfeld-charecters | uniq -u | wc -l
