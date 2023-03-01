@@ -153,10 +153,7 @@ wc (word count - returns a count of lines, words or bytes)
 	ls -l | wc -l						- returns the line count of the ls -l command
 	grep keyword | wc -l					- returns the line count of the grep keyword command
 	
-
 cut
-
-sed
 
 wc (word count)
 
@@ -184,8 +181,58 @@ wc (word count)
 	- cat file1 file2 file3 file4 > file5
 	- split file4
 		- split -l 10 fileToSplit.txt fileToPutTheTextInto.txt	- put 10 lines in each of the fileToPutTheTextTo
+
+- System Administration:
+
+	File Editors:
+
+	Text editor is a program which enables you to create and manipulate data in a Linux file.
+	Most common editors
+	- vi
+	- nano
+	- ed
+	- ex
+	- emacs
+	- pico
+	- vim
+
+	vi common keys
+	- i - insert
+	- Esc - out of any mode
+	- r - replace
+	- d - delete
+	- :q! - quit without saving
+	- :wq! - quit and save
 	
-	
+
+	File manipulation
+
+	Replace a string in a file with a new string, find and delete a line, delete empty lines, remove the first or n lines in a file, replace tabs with spaces, show defined lines from a file and etc.
+
+	- sed
+		- sed 's/stringToFindInFile/stringToReplaceTheFoundString/g' fileName - this is going to make changes only to the output of the file, it is not going to change the content of the file.
+		- sed -i 's/stringToFind/stringToReplace/g' fileName - the insert option will not change the content of the file. The 's/' stand for substitute
+		
+		- sed '/stringToDelete/d' fileName	- the '/d' stands for delete, this will delete all the lines that contains the string we gave as argument
+
+		- sed '/^$/d' fileName	- remove empty lines
+
+		- sed '1d' fileName - remove the first line of the file
+
+		- sed '1,2d' fileName - remove first and second line of the file
+
+		- sed 's/\t/ /g' fileName - replace tabs with spaces in the file
+
+		- sed -n 12,18p fileName - show lines 12 to 18 from the file
+
+		- sed 12,18d fileName - show all lines exept lines 12 to 18 from the file
+
+		- sed G fileName  - add empty line between each line 
+
+		- sed '8!s/stringToReplace/stringToReplaceWith/' fileName - replace all occurances of the string, expect the 8th line
+
+		Replace in vi
+		- :%s/stringToReplace/stringToReplaceWith/
 
 - Networking Basics:
 	
