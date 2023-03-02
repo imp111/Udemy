@@ -44,8 +44,10 @@ Type	# of Links	Owner	Group	Size	Month	Day	Time	Name
 
 - User Administration:
 passwd [userName] - change user password
+
 ACL (Access Control List) - gives an user or a group more flexible permissions to access, edit or execute directories and files.
 If some user is not part of the group of a directory, we can add him in the ACL and he will be able to access this directory.
+
 setfacl
 	setfacl -m u:user:rwx /path/to/file - add perfmissions for user
 	setfacl -m g:group:rw /path/to/file - add permissions for a group
@@ -54,13 +56,6 @@ setfacl
 	setfacl -b /path/to/file - remove all entries (for all users)
 
 getfacl /path/to/file - get all entries for the specific file
-
-useradd - add user
-userdel - remove user
-	userdel -r userName - remove user, home directory and email spool
-usermod - modify user account
-groupadd
-groupdel
 
 - Creating Files and Directories:
 mkdir - make directory
@@ -95,6 +90,7 @@ chmod 222 fileName	- gives write and execute permissions for all users
 
 chown - change file owner
 chgrp - change group ownership of a file
+
 - Streams:
 0 - stdin
 1 - stdout
@@ -233,6 +229,30 @@ wc (word count)
 
 		Replace in vi
 		- :%s/stringToReplace/stringToReplaceWith/
+
+	User Account Management:
+
+	Commands
+	- useradd - add user
+	- userdel - remove user
+	- userdel -r userName - remove user, home directory and email spool
+	- usermod - modify user account
+	- groupadd - create a new group
+	- groupdel - delete group
+	- id userName - check the uid, gid and groups of user
+	
+	Files
+	- /etc/passwd - the file in which all users are listed
+	- /etc/group  - the file in which all groups are listed
+	- /etc/shadow - the file in which all the passwords of each user are listed (encrypted)
+
+	Example
+	- useradd -g superheroes -s /bin/bash -c "user description" -m -d /home/spiderman spiderman	- -g - group, -s - shell, -c - user decription, -m, -d - home directory,
+	
+	Ways to check if some user exists
+	- id userName
+	- cat /etc/passwd
+	- check /home/directory
 
 - Networking Basics:
 	
